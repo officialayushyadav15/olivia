@@ -22,7 +22,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section id="oval" class="mb-4">
+    <div class="container">
+
+    
+    <section id="oval" class="mb-4" >
         <div class="row">
             <div class="col-md-1"></div>
             <div class="col-md-10">
@@ -39,11 +42,45 @@
                     </div>
 
                 </div>
-                <h5 class="text-light text text-center">Hi olivia here how can i help you</h5>
+                <h5 class="text-light text text-center">Hi! Olivia here. What's on your mind?</h5>
+
+                <div class="col-md-12 mt-4 pt-4" >
+                    <div class="text-center">
+                        <div id="TextInput" class="d-flex">
+
+                            <input type="text" name="chatbox" class="input-field" id="chatbox" placeholder="type here ...">
+                            <button id="Micbtn" class="glow-on-hover"><i class="bi bi-mic-fill"></i></button>
+                            <button id="Chatbtn" class="glow-on-hover"><i class="bi bi-chat-dots-fill"></i></button>
+                            <button id="Settingsbtn" class="glow-on-hover"><i class="bi bi-gear-fill"></i></button>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="col-md-1"></div>
         </div>
     </section>
+
+    <section id="SiriWave" class="mb-4" hidden>
+
+        <div class="cotainer">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
+
+                        <div class="">
+
+                            <p class="text-start text-light mb-4 siri-message">bdkbhvaaaaaaaaaaaaabhvhasssssssssssssss</p>
+    
+                            <div id="siri-container"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </div>
 
     <!--jquery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
@@ -55,6 +92,9 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
     <script src="script.js"></script>
+
+    <!--siriwave-->
+    <script src="https://unpkg.com/siriwave/dist/siriwave.umd.min.js"></script>
 
     <!--texllate js-->
     <script src="assets/vendore/texllate/jquery.fittext.js"></script>
