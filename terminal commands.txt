@@ -1,0 +1,5 @@
+terminal commands used:
+
+python -m venv envolivia
+
+pip install Eel
